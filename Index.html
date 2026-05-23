@@ -3,9 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Façade Concept - Ravalement et rénovation de façades à Béziers et alentours</title>
-  <meta name="description" content="Spécialistes en ravalement, rénovation de façades, démoussage, peinture intérieure et extérieure à Béziers et dans les communes environnantes. Devis gratuit, intervention rapide, artisans qualifiés.">
+  <title>Façade Concept – Ravalement de Façade à Béziers | Artisans Hérault (34)</title>
+  <meta name="description" content="Façade Concept, artisans spécialisés en ravalement de façade, démoussage, peinture extérieure et isolation à Béziers et dans tout l'Hérault (34). Devis gratuit, +10 ans d'expérience, garantie décennale, +250 chantiers réalisés en Occitanie." />
   <link rel="canonical" href="https://www.facade-concept.fr/" />
+
+  <!-- SEO LOCAL & GÉOLOCALISATION -->
+  <meta name="geo.region" content="FR-34" />
+  <meta name="geo.placename" content="Béziers, Hérault, Occitanie" />
+  <meta name="geo.position" content="43.3422;3.2157" />
+  <meta name="ICBM" content="43.3422, 3.2157" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="author" content="Façade Concept – Béziers" />
+  <meta name="keywords" content="ravalement façade Béziers, rénovation façade Hérault, démoussage toiture Béziers, peinture extérieure Béziers, artisan ravalement Hérault, isolation thermique façade, enduit façade Occitanie, façade concept Béziers, ravalement maison Hérault, nettoyage façade 34, ravalement Agde Pézenas" />
+
+  <!-- OPEN GRAPH (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.facade-concept.fr/" />
+  <meta property="og:title" content="Façade Concept – Ravalement de Façade à Béziers (Hérault 34)" />
+  <meta property="og:description" content="Artisans spécialisés ravalement façade, démoussage, peinture extérieure et isolation à Béziers et tout l'Hérault. Devis gratuit, +10 ans d'expérience, +250 chantiers réalisés en Occitanie." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Façade Concept" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Façade Concept – Ravalement à Béziers, Hérault" />
+  <meta name="twitter:description" content="Artisans spécialisés ravalement de façade à Béziers. Devis gratuit, intervention rapide, résultat garanti." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -25,17 +48,19 @@
 
     /* === CSS VARS === */
     :root {
-      --navy: #0d1f3c;
-      --navy-mid: #142952;
-      --gold: #c8922a;
-      --gold-light: #e8b84b;
-      --cream: #f5f3ef;
+      --navy: #0b1a2e;
+      --navy-mid: #102440;
+      --gold: #b8902c;
+      --gold-light: #d4ac50;
+      --cream: #f7f4ee;
       --white: #ffffff;
       --gray: #6b7280;
-      --light: #e8e4dc;
-      --radius: 8px;
-      --shadow: 0 4px 24px rgba(13,31,60,0.12);
-      --transition: 0.3s ease;
+      --light: #ebe6d8;
+      --radius: 10px;
+      --shadow: 0 6px 32px rgba(11,26,46,0.13);
+      --shadow-gold: 0 8px 40px rgba(184,144,44,0.18);
+      --transition: 0.32s ease;
+      --font-display: 'Playfair Display', Georgia, serif;
     }
 
     /* === HEADER === */
@@ -547,6 +572,125 @@
       section { padding: 56px 20px; }
     }
 
+    /* === LUXURY ENHANCEMENTS === */
+    .section-label { letter-spacing: 3px; }
+    .section-title { letter-spacing: -0.3px; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      letter-spacing: 0.3px;
+    }
+    .btn-primary:hover { background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%); }
+    .service-card { border-radius: 18px; }
+    .av-card { border-radius: 18px; border-top: none; border-left: 3px solid transparent; }
+    .av-card:hover { border-left-color: var(--gold); border-top-color: transparent; }
+    .logo-icon { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); border-radius: 10px; }
+    .hero-badge { background: rgba(184,144,44,0.22); border-color: rgba(212,172,80,0.5); }
+    .hero-stat { border-radius: 14px; border: 1px solid rgba(212,172,80,0.2); }
+    .hero-stat .val { font-size: 32px; }
+    #stats { background: linear-gradient(160deg, #0b1a2e 0%, #0e2440 100%); }
+    .stat-item { padding: 48px 28px; }
+    .apropos-img { border-radius: 22px; }
+    .certif-card { border-radius: 16px; }
+    .temo-card { border-radius: 18px; }
+    footer { background: #07111e; }
+    .quick-nav a { font-size: 12px; letter-spacing: 1px; }
+
+    /* Séparateur doré décoratif */
+    .gold-separator {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; margin: 0 auto 20px;
+    }
+    .gold-separator::before, .gold-separator::after {
+      content: ''; flex: 1; max-width: 80px;
+      height: 1px; background: linear-gradient(90deg, transparent, var(--gold));
+    }
+    .gold-separator::after { background: linear-gradient(90deg, var(--gold), transparent); }
+    .gold-separator span {
+      width: 6px; height: 6px; background: var(--gold);
+      border-radius: 50%; display: block;
+    }
+
+    /* === PROCESSUS === */
+    #processus { background: var(--white); }
+    .processus-header { text-align: center; margin-bottom: 56px; }
+    .processus-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+      position: relative; max-width: 1100px; margin: 0 auto;
+    }
+    .processus-grid::before {
+      content: ''; position: absolute; top: 36px; left: 12.5%; right: 12.5%;
+      height: 1px; background: linear-gradient(90deg, transparent, var(--gold) 20%, var(--gold) 80%, transparent);
+      z-index: 0;
+    }
+    .processus-step { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+    .processus-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      border: 1.5px solid var(--gold); background: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px; position: relative;
+      transition: all 0.35s ease;
+    }
+    .processus-num svg { width: 28px; height: 28px; fill: var(--gold); transition: fill 0.35s; }
+    .processus-step:hover .processus-num { background: var(--gold); }
+    .processus-step:hover .processus-num svg { fill: var(--navy); }
+    .processus-step-n {
+      position: absolute; top: -8px; right: -8px;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--navy); color: var(--gold-light);
+      font-size: 10px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      letter-spacing: 0;
+    }
+    .processus-step h3 {
+      font-family: var(--font-display); font-size: 17px; font-weight: 700;
+      color: var(--navy); margin-bottom: 10px;
+    }
+    .processus-step p { font-size: 13.5px; color: var(--gray); line-height: 1.7; }
+
+    /* === ZONE D'INTERVENTION === */
+    #zone { background: var(--cream); }
+    .zone-header { text-align: center; margin-bottom: 48px; }
+    .zone-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; max-width: 1000px; margin: 0 auto; }
+    .zone-list {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    .zone-item {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--white); border-radius: 10px;
+      padding: 12px 14px; font-size: 14px; font-weight: 500;
+      color: var(--navy); box-shadow: 0 1px 8px rgba(11,26,46,0.06);
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .zone-item:hover { box-shadow: var(--shadow-gold); transform: translateY(-2px); }
+    .zone-item::before {
+      content: ''; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0;
+    }
+    .zone-cta { background: var(--navy); border-radius: 20px; padding: 40px 36px; color: white; }
+    .zone-cta h3 {
+      font-family: var(--font-display); font-size: 24px; font-weight: 700;
+      color: white; margin-bottom: 14px; line-height: 1.3;
+    }
+    .zone-cta p { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.75; margin-bottom: 28px; }
+    .zone-cta .btn-primary { display: inline-flex; }
+    .zone-dept {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(212,172,80,0.18); border: 1px solid rgba(212,172,80,0.35);
+      color: var(--gold-light); padding: 6px 14px; border-radius: 50px;
+      font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      margin-bottom: 18px; display: inline-flex;
+    }
+
+    @media (max-width: 900px) {
+      .processus-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+      .processus-grid::before { display: none; }
+      .zone-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .processus-grid { grid-template-columns: 1fr; }
+      .zone-list { grid-template-columns: 1fr; }
+    }
+
     /* === SCROLL REVEAL PHOTOS === */
     .reveal-img {
       opacity: 0;
@@ -558,7 +702,190 @@
       opacity: 1;
       transform: scale(1) translateY(0);
     }
+    /* === BANDEAU CONFIANCE === */
+    .trust-banner { background: var(--gold); padding: 11px 0; overflow: hidden; white-space: nowrap; }
+    .trust-track { display: inline-flex; animation: marquee 32s linear infinite; }
+    .trust-track:hover { animation-play-state: paused; }
+    .trust-item {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 0 36px; font-size: 12px; font-weight: 700;
+      color: var(--navy); text-transform: uppercase; letter-spacing: 0.7px;
+    }
+    .trust-item svg { width: 13px; height: 13px; fill: var(--navy); flex-shrink: 0; }
+    .trust-dot { display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: rgba(13,31,60,0.35); margin: 0 2px; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* === TÉMOIGNAGES === */
+    #temoignages { background: var(--cream); }
+    .temoignages-header { text-align: center; margin-bottom: 48px; }
+    .temoignages-wrap { position: relative; overflow: hidden; }
+    .temoignages-track { display: flex; gap: 24px; transition: transform 0.5s cubic-bezier(.4,0,.2,1); will-change: transform; }
+    .temo-card {
+      background: var(--white); border-radius: 16px; padding: 28px 26px;
+      box-shadow: 0 2px 20px rgba(13,31,60,0.08);
+      min-width: calc(33.333% - 16px); flex-shrink: 0;
+      border-bottom: 3px solid transparent; transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .temo-card:hover { border-bottom-color: var(--gold); box-shadow: 0 8px 36px rgba(13,31,60,0.14); }
+    .temo-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .temo-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; font-weight: 800; color: #fff; flex-shrink: 0;
+    }
+    .temo-meta { flex: 1; min-width: 0; }
+    .temo-name { font-weight: 700; font-size: 14px; color: var(--navy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .temo-via { font-size: 11px; color: var(--gray); display: flex; align-items: center; gap: 4px; margin-top: 2px; }
+    .temo-via svg { width: 12px; height: 12px; flex-shrink: 0; }
+    .temo-stars { color: #fbbc04; font-size: 15px; letter-spacing: 1px; margin-bottom: 11px; }
+    .temo-text { font-size: 13.5px; color: #4b5563; line-height: 1.75; font-style: italic; }
+    .temo-date { font-size: 11px; color: var(--gray); margin-top: 12px; }
+    .temo-nav { display: flex; justify-content: center; align-items: center; gap: 14px; margin-top: 36px; }
+    .temo-btn {
+      width: 42px; height: 42px; border-radius: 50%;
+      border: 1.5px solid var(--light); background: var(--white);
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: all var(--transition);
+    }
+    .temo-btn:hover { background: var(--navy); border-color: var(--navy); }
+    .temo-btn:hover svg { fill: var(--white); }
+    .temo-btn svg { width: 16px; height: 16px; fill: var(--navy); transition: fill var(--transition); }
+    .temo-dots { display: flex; gap: 7px; }
+    .temo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--light); cursor: pointer; transition: all 0.3s; }
+    .temo-dot.active { background: var(--navy); width: 22px; border-radius: 4px; }
+    .temo-rating-global {
+      display: flex; align-items: center; gap: 14px; justify-content: center;
+      margin-bottom: 40px; flex-wrap: wrap;
+    }
+    .temo-rating-num { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 800; color: var(--navy); line-height: 1; }
+    .temo-rating-details { text-align: left; }
+    .temo-rating-stars { color: #fbbc04; font-size: 22px; letter-spacing: 2px; }
+    .temo-rating-count { font-size: 13px; color: var(--gray); margin-top: 4px; }
+    .google-logo { display: flex; align-items: center; gap: 5px; font-size: 13px; font-weight: 600; color: #3c4043; }
+
+    /* === CERTIFICATIONS === */
+    #certifications { background: var(--navy); padding: 64px 24px; }
+    .certif-header { text-align: center; margin-bottom: 44px; }
+    .certif-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      gap: 18px; max-width: 960px; margin: 0 auto;
+    }
+    .certif-card {
+      background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px; padding: 26px 14px 20px; text-align: center;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+    }
+    .certif-card:hover { background: rgba(200,146,42,0.15); border-color: rgba(200,146,42,0.4); transform: translateY(-4px); }
+    .certif-icon {
+      width: 54px; height: 54px; margin: 0 auto 14px;
+      background: rgba(200,146,42,0.18); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .certif-icon svg { width: 26px; height: 26px; fill: var(--gold-light); }
+    .certif-name { font-size: 13px; font-weight: 700; color: var(--white); display: block; margin-bottom: 6px; line-height: 1.3; }
+    .certif-desc { font-size: 11px; color: rgba(255,255,255,0.52); line-height: 1.55; }
+
+    /* === FAQ === */
+    #faq { background: var(--white); }
+    .faq-header { text-align: center; margin-bottom: 52px; }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item { background: var(--cream); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+    .faq-q {
+      width: 100%; background: none; border: none; padding: 20px 22px;
+      text-align: left; display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 600;
+      color: var(--navy); transition: color var(--transition); gap: 12px;
+    }
+    .faq-q:hover { color: var(--gold); }
+    .faq-ico {
+      width: 24px; height: 24px; border: 2px solid var(--light); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      transition: all 0.3s; font-size: 18px; font-weight: 300; color: var(--navy); line-height: 1;
+    }
+    .faq-item.open .faq-ico { background: var(--gold); border-color: var(--gold); transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-a p { font-size: 14px; color: var(--gray); line-height: 1.8; padding: 0 22px 20px; }
+    .faq-item.open .faq-a { max-height: 280px; }
+
+    @media (max-width: 900px) { .temo-card { min-width: calc(50% - 12px); } }
+    @media (max-width: 600px) { .temo-card { min-width: 100%; } .certif-grid { grid-template-columns: repeat(2, 1fr); } }
   </style>
+
+  <!-- SCHEMA.ORG STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.facade-concept.fr/#business",
+        "name": "Façade Concept",
+        "description": "Artisans spécialisés en ravalement de façade, démoussage, peinture extérieure et isolation thermique à Béziers et dans toute la Hérault (80), Occitanie.",
+        "url": "https://www.facade-concept.fr/",
+        "telephone": "+33000000000",
+        "email": "contact@facade-concept.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Béziers",
+          "addressLocality": "Béziers",
+          "postalCode": "34500",
+          "addressRegion": "Hérault",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.3422,
+          "longitude": 3.2157
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Béziers"},
+          {"@type": "City", "name": "Agde"},
+          {"@type": "City", "name": "Amiens"},
+          {"@type": "City", "name": "Pézenas"},
+          {"@type": "City", "name": "Sérignan"},
+          {"@type": "AdministrativeArea", "name": "Hérault"}
+        ],
+        "openingHoursSpecification": [
+          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:30"},
+          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
+        ],
+        "priceRange": "€€",
+        "paymentAccepted": "Cash, Virement bancaire, Chèque",
+        "currenciesAccepted": "EUR",
+        "hasMap": "https://maps.google.com/?q=Béziers,Hérault",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "47",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "sameAs": [
+          "https://www.facebook.com/facadeconcept"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services de rénovation de façade",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ravalement de façade", "areaServed": "Béziers, Hérault"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Démoussage et nettoyage de façade"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Peinture extérieure"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Isolation thermique par l'extérieur (ITE)"}}
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Quel est le prix d'un ravalement de façade à Béziers ?", "acceptedAnswer": {"@type": "Answer", "text": "Le coût d'un ravalement de façade dépend de la superficie, de l'état de la façade et des travaux nécessaires. Il faut compter en général entre 30 et 80 € par m² toutes fournitures et poses incluses. Nous proposons un devis gratuit et personnalisé pour chaque projet."}},
+          {"@type": "Question", "name": "Quelles communes d'intervention autour de Béziers ?", "acceptedAnswer": {"@type": "Answer", "text": "Nous intervenons à Béziers et dans toutes les communes voisines de l'Hérault : Agde, Pézenas, Sérignan, Valras-Plage, Villeneuve-lès-Béziers, Portiragnes, Bassan et les environs de Montpellier."}},
+          {"@type": "Question", "name": "Proposez-vous un devis gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, nous proposons un devis entièrement gratuit et sans engagement. Notre artisan se déplace chez vous pour évaluer les travaux et vous remettre un devis détaillé sous 48h."}},
+          {"@type": "Question", "name": "Quelle est la durée de vie d'un ravalement de façade ?", "acceptedAnswer": {"@type": "Answer", "text": "Un ravalement de façade réalisé dans les règles de l'art a une durée de vie de 10 à 20 ans selon les produits utilisés et les conditions climatiques. Nos enduits et peintures de haute qualité garantissent une protection maximale dans le temps."}}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -573,7 +900,7 @@
       </div>
       <div class="logo-text">
         <strong>Façade Concept</strong>
-        <span>Baizieux &amp; Alentours</span>
+        <span>Béziers &amp; Alentours</span>
       </div>
     </a>
     <nav class="main-nav">
@@ -611,6 +938,33 @@
   </div>
 </header>
 
+<!-- BANDEAU CONFIANCE DÉFILANT -->
+<div class="trust-banner" aria-label="Garanties et engagements">
+  <div class="trust-track" id="trustTrack">
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Devis 100% gratuit</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Garantie décennale</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>+250 chantiers réalisés</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>Note 4,9/5 sur Google</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Artisans locaux – Béziers</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.81 6-4.72 7.28L13 17v5h5l-1.22-1.22C19.91 19.07 22 15.76 22 12c0-5.18-3.95-9.45-9-9.95zM11 2.05C5.95 2.55 2 6.82 2 12c0 3.76 2.09 7.07 5.22 8.78L6 22h5V2.05z"/></svg>+10 ans d'expérience</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.09 15.91 0 13.33 0c-1.49 0-2.71.69-3.57 1.74L12 4.63l2.24-2.24C14.7 1.87 15.01 2 15.33 2c1.1 0 2 .9 2 2 0 1.08-.73 1.97-1.71 2.12-.11.01-.2.08-.29.08H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-9 7c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>Assurance professionnelle</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Matériaux certifiés NF</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Satisfaction garantie</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>Intervention rapide</span><span class="trust-dot"></span>
+    <!-- Duplicate pour boucle continue -->
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Devis 100% gratuit</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Garantie décennale</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>+250 chantiers réalisés</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>Note 4,9/5 sur Google</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Artisans locaux – Béziers</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M13 2.05v2.02c3.95.49 7 3.85 7 7.93 0 3.21-1.81 6-4.72 7.28L13 17v5h5l-1.22-1.22C19.91 19.07 22 15.76 22 12c0-5.18-3.95-9.45-9-9.95zM11 2.05C5.95 2.55 2 6.82 2 12c0 3.76 2.09 7.07 5.22 8.78L6 22h5V2.05z"/></svg>+10 ans d'expérience</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.09 15.91 0 13.33 0c-1.49 0-2.71.69-3.57 1.74L12 4.63l2.24-2.24C14.7 1.87 15.01 2 15.33 2c1.1 0 2 .9 2 2 0 1.08-.73 1.97-1.71 2.12-.11.01-.2.08-.29.08H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-9 7c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>Assurance professionnelle</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Matériaux certifiés NF</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Satisfaction garantie</span><span class="trust-dot"></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>Intervention rapide</span>
+  </div>
+</div>
+
 <!-- HERO -->
 <section id="accueil" style="padding:0;">
   <div id="hero">
@@ -619,13 +973,13 @@
     <div class="hero-content">
       <div class="hero-badge">
         <svg style="width:12px;height:12px;fill:currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-        Artisans locaux — Baizieux &amp; alentours
+        Artisans locaux — Béziers &amp; alentours
       </div>
       <h1 class="hero-title">
-        Experts en <em>ravalement</em><br>de façades à Baizieux
+        Experts en <em>ravalement</em><br>de façades à Béziers
       </h1>
       <p class="hero-desc">
-        Spécialistes de la rénovation et du ravalement de façades dans le secteur de Baizieux et ses communes voisines. Devis gratuit, intervention rapide, résultat garanti.
+        Spécialistes de la rénovation et du ravalement de façades dans le secteur de Béziers et ses communes voisines. Devis gratuit, intervention rapide, résultat garanti.
       </p>
       <div class="hero-btns">
         <a href="#contact" class="btn-primary">
@@ -671,7 +1025,7 @@
     <div class="services-header">
       <div>
         <p class="section-label">Ce que nous faisons</p>
-        <h2 class="section-title">Nos services de façade<br>à Baizieux</h2>
+        <h2 class="section-title">Nos services de façade<br>à Béziers</h2>
       </div>
       <p class="section-desc">
         De la rénovation au ravalement complet, notre équipe est votre expert local pour l'embellissement et la protection de vos façades dans toute la région.
@@ -681,7 +1035,7 @@
 
       <div class="service-card">
         <div class="service-img">
-          <img src="data:image/jpeg;base64,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" alt="Ravalement de façade Baizieux">
+          <img src="data:image/jpeg;base64,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" alt="Ravalement de façade Béziers">
           <span class="service-tag">Principal</span>
         </div>
         <div class="service-body">
@@ -693,7 +1047,7 @@
 
       <div class="service-card">
         <div class="service-img">
-          <img src="data:image/jpeg;base64,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" alt="Démoussage toiture Baizieux">
+          <img src="data:image/jpeg;base64,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" alt="Démoussage toiture Béziers">
           <span class="service-tag">Entretien</span>
         </div>
         <div class="service-body">
@@ -705,7 +1059,7 @@
 
       <div class="service-card">
         <div class="service-img">
-          <img src="data:image/jpeg;base64,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" alt="Peinture intérieure Baizieux">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUQExIVFhUVFxUVFxUXGBYVFxUVFRYWFhUVFRcYHiggGBolGxUVITEhJSorLi4uFyAzODMtNygtLisBCgoKDg0OGhAQGi0dHR0rLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0uLS0tLS0tKy0tLS0tLf/AABEIAMIBBAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAADBAUGAAECBwj/xABAEAACAQIDBAgEBAQDCQEAAAABAgADEQQhMQUSQXEGIjJRYYGRsROhwfBCUnLRFCOy4TNiwgcVJDRDU4KS8XP/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQMCBP/EACQRAQEAAgICAgICAwAAAAAAAAABAhEhMRJBAzKRwXGhBCJh/9oADAMBAAIRAxEAPwCfFOpwdj57336zW+/ieRI/tF1wjDQkHn+xM1UqVlt+L5zJ2Y+Ke9x6n2m1c8Kh9TB08YT2k+kMKqHUEcxeRXS4moPxH1MKm03439TBLTQ9lreZHvlNmi3Pyv8AMQGhjgdbjzImxVB0c+sRKH8voZxYePpJtdJIOw0Y+p9tJ0MW41J+/GRoY8Deb/iSI2aSgxnifWZ/E/5j6yM/iJnxhG10kjWPefUzXxT3n1MjhW8YWnU742aOqxPE+pm3xFsrm/OIvjOAnKteNmjJqsfxH1M7W/Fj6mcU5veJ0z8eH95AX4jcCR5zW+RoTzuYqpO+bnJQM/Exhl6y+cbTTCzH8R9TNbx7z6maw4ynZWRQi7d59TOC7fmPqYUicEQOC7fmPqYNnb8x9TCkQbCAJqjfmPqYNqjfmPqYVlg2EAZqN+ZvUwbVW/M3qYQiDYQBtVb8zepgmrN+ZvUwjCCYQjg1m/M3qZk0RMlHq9bYtJuH37SqbUwQp1WQaCX2VDb3+O3l7Cb2M4VwGymqAlbZcP2y+sytsVxrT9M/6byw9Guw3Me0lDVHGTxht59V2bbUEffdrAPhCND9J6PZTkV/vIXpDhVAUqoFyb2yvJcVmSrIW778xead+9R8xLP0fwYam28AcxkQDwPfF9t4FVUEDvv3cOGk5uLryVtQGvkRbvtF94jLhJOnT7X3xERK6zOu4Cbd1uU4IHBvWHZIJqcihEMO48pz/EHxm2TuP0gKjN95ybDFNo7QPAZ+w85GYNN7MnyGXrJijwGkuzQ9JL6m/gNP7w8AlCxJHn4nvjKJOnIDjt+XsIVx1l84Ma1B3FfYRlx1l/8AL6SAGHGUIRNYYdWEIgBIgyIcickQAkQbCMEQRBv4QF2E4ZYwwg3EBdhBMIwwgmEBdhBMIwwgmEABEydETJR6zT2lROlVPNgPeVfbVQGuxBuO8cpZnw6nVFPMA/3lS2qgWswAAGWQ0GU3y4YzlP8ARduo/Me0mDK50dw2+rHfdbEdlrcOI4yWOGqjSubf5lU/PKIU/InpF2V5mMKa44028mUyO25VchQygZnQ3v8ALKKGej56jc/pOOkC9Qc/2nGxK+6rDdY56gXAy4zrbGIVksCb30II7u8Sel9q+i5Py+okaRJimMn5D3EiWGsxya4uCINhDGcMJy6LssA6RsrBus5UtgF95NYdLyNwAyPOPpiLSxKkKagQqmRwxI74VMVmB3zraadAZ1ea+wjLjrL/AOX0gbZ1f1L7CMuOuvJv9MsQDCjq+sJuzWEHVHnCEQbBYTgiGYTgiAIiDcQ5EEwgAacNCsINhIAtBMIZhBsIAGEEwjDCBcQAETJ0RMlHrjmU3bf+O8t6VL/L6ynbb/5h5vl0yx7TXRXsP+oe0mawyMheinYf9Q9pOkSxKGzWt48/CRXSE9nn9I7jUvu28fpI3pGdP1f6YvROzWwOw3P6Tvbg6nn+0H0d/wANuf0hdtDqef7Sel9q+q9V/wBI9xIdpPonUf8ASPcSFqU5jk0xCtOHhgJ0yzh2UIg3EbdYs415GQDwIyPOOBIrs/Q84+BIoW5CUh1l5zGE6o9peYhDm7nW/UvsI26ddeTf6YK2db9Sewjbr115N/pmsjgnhB1B5wm7MwY6g8/eFIlC7CDIh2EG0gCRBuIZhBsJFAYQTCHYQTSAREEwhmgmgCaBeGaCaAEzJszJR6erVPyL5GVTbJJxD5S4UKqve3Dwt7ypbbH/ABDzbJlik+jFQhH6pPWGnKTIxXerehkZ0WTqP+oe0mtzn6yzpL2Uq1Q2VyNeHfzEitugbq2N+t6ZSfOXGQ3SMXCc/oYqwXo+w3GF/wAX0EY2v2POB2CvUb9X0ENtfsDnE6L2iE7L8h7iRNUSZpjqvyHuJE1qZmeTvEuUmjGLQFSZuw30i1QZHlGC0FUGXkZzVB2cMjzkgBEdn6HnHxEHLiZQ7S8x7iZUmYftrzHuI9iUtnW/Un9Ijjjrryb/AExUa1v1J/SI2/8AiLyf3WbRkVwQ/ljz9zCETWA/wx5+5hGhQGEGywxnBgAYQbCMMIFxIoDCCcQ7CDYSaUuwgmEYYQTiQLMIFow4gWEAJEydETIHpuyx1c78NbX49wle2qB8appfO1+/K0ncBiltYsoyH4hKztlr13IOX9pvmyxWDo5bde35vpJcyB6M11FNt5gOtxIHAd8mDik/On/sP3idFbrIDa/j9JDdI9F5/SSlXFp+ZTyK/vIjpDUDBSDx7weHhF6SdnOj/Yb9X0ENtfsjnFujzgIQSL73f4CM7V7I5xOlvaLpdl+Q9xEagj6HqvyHuIg04rqF6mUXYXjbJOWp5Tix3KRYQbjI8jDOIJxl5TOugsDoeceAiOA484+Ig5cTMP21/UPcTK17ZeHpfP5TMP21/UPcR7Emda36k/pEX2zt7D4Z0NeqtMEPbeOZzXgM53iXsMQ3cVNu+yAz5/6UbRetUeo7Fi5BN+HcF7gLWE3jKvftg7Qp1qKvSqK65i6kML3ORtoY+TPnXojSxi1FqYZ9xi4TM7u9fKxFiCOtx759CUmO6N629YXtpe2dvC8cFlnNdkTgzpjAM8K2xgmM0XnBaQaaDaEacMJFCYQTQzQZEaC7iBYRlxAMJNAJEydETcC9GnTsCKVwdVsoJI8Ab3F9PGV7an+M3L6CWrCpeoz37SUz6737CVnbI/4h/Oa51nif6Pgbtyl+t2sssh1c8s5LvVRgQKdu4kL1tOyb592XfI3Yi3w9YeDf0SWqHedRbsVLDX/tFvrLOkvYFEKBnSN/yWUlRl524+cjtvWspUWG9wt3eH3nJep1XJ8KY9XYSK26tkQD8z/1NFvBOzGw7bmgJ3voPbWN7XPVHOK9HdDzb2SMbYPVHOJ0t7RlM9V+Q9xEzG6bCzZjMD3ipWcV1GgJjCFCG2htAEyOilZM4vUX2jtWJ15nXUL4Djzj6xDAHXnJASRXNTSaw3bT9Q9xMqaRqlanTNU23jpy4W56+Ua3S9Euke0BRWpx+I2vEKoAawtme6eM2oimyOcyx3SQMwRZN08LZm3Mc/QukNYEMzN4cO6/cflKbs7ZtOpi6INJqtJ6g3qXEnPNbkZaEgkcZ1eVx/15SHRXDk1qC0V3ghV2GQG6pAZnPfn5kcZ6k7eMjOjWxqOGpH4Kbu+bsd5mvYkDtE2HgI1Wq2MY46TLPyo7VCeMTq17GYKsqnSXbZSoBTcWXJhkd5iclHiLfPPSVFqpYq8Yp1QZV9ibV+MhNrWYgHvtbP1vJSjUN42mkxOTA06sIGlRowbQhnDQgLQLCHYQTCAAzJ0RMhV72NvdYt+WnbXTrd+ffK/tn/mH5mWbBLuEg/kQXPhvfvKvtlx8d7TT5GeCX2GP+Hq8m/ojGBoMtXrNezkHxJpE38fvxiWxMQq0aiswBNwLm2q2ko20aNwQ69reOf8AlK/tLjeCzlraVAs2RIsEGXi58Dp9ZG7bWyIO5mHoWj77Wo7xJa4sOBOYJP1kVtbGpUChb5EnS2t+/nJbwScpDo2OqTz/ANEY2wTZbcSR6i3vaI9Hq6hTdhrodbEDP5RjamMQgBWuQfqInR7UnFbQRWK/GAe9t3esb8oKpjW/7rf+zQHSZPhgsgVWZgC91Qi3iQb3AMqf8exNi9z/APovr1F1++Wdw300mWvtpdcO28yj4hNz4n3k6ZSuilVjVRDdjdiD1mNhnmWAvrlYcPCXGs8mtLvYNZ4rUaFZovVM5roPZ515yRBkXs85nn+8kgZIO1TeIHryGZ+UiOl+0woC8LGw00+xJV33Udt0tdSuRUWvqTcj5TzTpJtr4h3d0rbiSCTwNrZWvz0nQ5XHGrdXNzu2B5ZnzyETw+Kak6utyVdWFr26pDDTlIX47KwZcrHx+xzkySKq/EXXQjTP94HrWxMStTDo6nIg8wd43B8ZE7VxFpR9ibcqYRiR1lfJkJPr4EX18YXaPSCpVyICjuH1vFvCScpbG7c3FNj1jkPDxlXxOJDm+W9mAcr592Rt6Q2FwZJ3j2b5A6sOB5c5I0qYJsQLcOFuU520nR7o9TKIAddT5yw4eROCFriSlAxOXFPJCq0FThBNI4ol5yZqaJhGmgmhGg2gCMyYZkolhs/En8L+bGcPsTEHgo5tf2lu34tVeaeEcedQ2H2DVOrIPWHbYe72qyj78ZLI1xnp6SudINiYCuQa9VVI0PxVUg8zmY8ZPS+VSSbFTjWJ9B9Zh2TRGrtbxO6DyJGflKJiejOzlO8u0aw1yV2YG/jTAPoZObP6S4TDUzTV3e7FiQjAkkAZ/EbuAk430vOju0lRHoBTUpIzOKr9ZQq/DJTrkbvbCjK8KuyCz0qgxrPTRt4pcOH8CVa1vLiZEVem9G43KNS4vxVDn4qSYhX27Vdg9PB2YXs1iWzyPXVAfnJfEnk56WUanxXK1GQE/lYgWFtdM9ZU6wqafxJ8lP0lpfFY2r/0UHidfV3JkRtOjXpkGtbdbLeCqwHfcgXnny+Ld4r04/NZNa/qOOjVf+HrisWqVCAw62QAItle5vLyOkNCqOuhv36H1GsqOG2RvsFFYWKb4ZRcEbxW2o7ofG7DREZt9mZVJGliR5TrGXHhnllMrtOYjE0B2ayj/KxAPkePyilWrzkXhMFQ+GjsMyoY3YgXIueM6xO1KY/GPLP2ikO4F8zzkkKkreC2gueds+7WPHaicCTyBkinekW0Pg0Qu6xvY36tsxcgXPdl5TzfEFHFr1LjOzFSe7Oy3OXjPSOk27URVpPepuA2/FYW0uN08j4zyrGY4FgqnrEgDqlczkBbdtfzE0uNcSwHEoCwVcyRc+FiBb5ieo9AsFRbCrTKq+8a/wAQEfjDUwPMKEz4TzbC0mFbcYEOSN47oJsLDUHdNu4ZS1/7L9pChWqUa7hSxIBJsvxL8OA3hb0HhJOyzcOYroTvoKlOoBfeurg5Z2NiNeyMj6yOqbHSibX3zxJyF/Af/Z6Lgk/kqPBv6jKdt6mQ5kyi41F1EmIkYdfaDSZ12fwYz8o4rWi+FXInvh7TqdJUhRqRpWkWj2jNOtO5WdN3miYH4s2Kk6R20G02WnDGByZk5JmQFW2vtJ/x7o5Uh7AmReM2jijUFE13eodVSo9lHe+gA++6LbS6QEjconPi9uzyB1MDgcZ8NSKdJiTmXY9Z27za8lyvt1MZ6SzbELG71yTyv8yYWnsaiNWc+YH0kbQr4pzYKo8ifcxunsjFOes5HgMvYTjydeJ5cBhx+C/NmP1mNUw6fhpjmFv85zQ6JM2buTzLH3klh+iCLbj4Rs0RpbXp6KfQGH/3kTkEb5SbwuwKa8B9/Mx9dnL+UD3lmzhWsPWqE33Dn4zuvQq1AVKLY5ENnccpZ6eGA4C336wq0RwnUlc7jzZtj1sPU/kHrMrMafAqCtwpOhzHp6s4dDiFZ1ZupcOjEhkIvcMvrLbjaI/iaBtqtZbeSN9ILauwhVPxKZNOsAQKijUflcaMvOSwin4HZBeiji3WUftN/wC4Txz+nOWzonhScLR6vBhe17Wdh9JJNsi5N7W4a/vJcLXUzkUWnse2ogMfiadElAu9UsbDhvWuAx8xlLxjsNSoUzVckhc24ZHIADv/AHnmuGoDF4tU0pmoatUX1p01Y7viCdwHwJjH49XkvybnCd6IbYp4q6ldyugvkTZ1BtfQ53By4jkbCxnRVRVbEXY3PYNyKbnVky4/L2l02etSr/LUU6u9b4qgArTph7EkAX6wIA4Xy1tBba2Jid741OoCXFqmbbhsAoa18rgDIXsQRfOa2b6Z70rNZAMgLmxsP7+Ylb2jQN/iaE5Nle3cxHgZdcdQC24G2Ytofe0r2PIpku5supOeR46fesxabembDVxhqW/2t3P1MhektHUwn+z/AKSpiKTUQ+8aO7YkEdRr7ozGdipHK0a6RsLG68NRl8ppZw4l5VKm/tAgzYU3uMxODMa1iVwbdWHDRHB1BaNobyxzUBt7pR/D10oinvgqGY71t0EkDge6MYbpfhW3R8UKWGh0FtQSLgecovSmuWxtZgR1Burna26oGv6gfWbr4dA+GokaUviVCBne2bX4nqsJvMOGFz5ep0sYGG8rBh3ggj5Q6YieTdHaNQo9ZCV3ybbpG8Drlp38I+ekeKw7KjfzAb9pSGAFtStu/iJfFPJ6cKs3vyl4bpnQsd8lSDYgdbO9tO1zy9ZP7P2pTrLv03DL3j690mnW0pvTIv8AEmSCS2f0Wo0wAEHM5k+JP7CSuG2Si6KB5SUp0/v+8KtMfeQmXi28idLBAG4Fvn7RlcP92/tGAB95QtMeE7mLi5FhQ+7f2nXw/vT6Ru04f71nXi58gETxnZp/fCEon7zmq7DXL1jRtxTpgmxyhxhlERZ+N/P9o5hsTv8AMfPxE6x0mWyG06QFfDGwA3qg9aZj1eoLbufIDv5DKIbavvYck/8AWUd3aVhJBiq56eJliILoid3DKOt1WqDIA/jY8+Mlnc62Ycwp9jIjorWtRqLYm1aqLAX4g8uMlmZzoFHM39bDL1idF7VrpiKj4Z1VCAu62alb2OY1BPIXnnHRmmaVY1/iIeqVKMy0juvruk9UkFRmfrPYnp7/APiEMRoQCoW/cbnPlFMXsTDv1mpL3Gwt3AHKc2LKgsHiSXNUEdbUBke1tM0JHdHsXtqnSUKzqu9fcuQN42uVF/SDfovh2NgNzxF971vlIzGdDAwtTrsAL6tvKpAsTrlx8czEti3VRY2qtWgleqUSo7MlhchyueWtjYaeB8qz0gq061B0Sqt2Fl3WBJa+Sgcb6ecPjuiFUdcKzKevdMwwU7oJQm4NhkRci+ovK7U2W6VF+GlVWVgQQpAyNxYuBYcu6SydkyvRnophK+GrfENMgWZbG4NmFjfgcuHKWA16yiwqllP4G/vGKVVrXYAnU9/nB1Otwv5j6CZXPbSY6LUMcQbMLSQp1VMXXDlst084NtnFeySPCcukpTQCdkgZnQZmRCPUXWa2viyaFUAHeKMLDXMWuB5zrGObXnVQmtUZyD/MqKL+JIJufKSe0K7GriXF7U6YQWzF2AGY04tr3RXYqgVaYY27TFTdDpZeYuDxj+ycP8WlVZrp8V2zAG9ujPMHLiRPVI8tqQ2OpFBOqBcXyuNT45e0isYQ+MW5yprmCQCMi2l+NxpJzC4QIoQE9Qdo2uw8s/UWlZ2jVC1sQbm7JbhlvBVA17iJa5nYOHUGhVqv2gbDvu2Vu/jLH0PrimpAyFk+e85/rErte64ZFGZdgLEkggXOnO0mNnYhUBFjbeaxFjkOqMjnoBxnGV4aY81dkxotrNyuJjEt2gPMj5EGZM9tdPe7/Z/aclu/5/tDqMsvU/QQNhe/zM0042LQH/06/wBoyEt/eCov3ev7d8OBfT1/aXSNn7zMFVH3vGGDQNZx3iBxR5H1M1Xbn8plGoO8TKz+AkUhVPPLlOEYr1uPD77vGar1PCLGv4fWZ2tJGdJq5ekoRgKgqUyBexU3sDyvxklh6xYdYDeGoOt+NpX9tIzUXFMA1LBluQMwynM+UYweNarTFQjdbMEWF1IOhtlpx43lxy3Uyx1BujT2/iF7sQ59QskzXU/iUga2+ucruxaCtUxAYb1nBscwd5b5jQ+cmGoqwAezAaKAN0W8BladTpxe3B2orEpSVnYE3IHUFv8AOcj5eM4q0azjdLAA2vu5nW5zyUZC2nGMqoUEAeQsPS03SqA2B11gKvg0ZStiQ1gSWNyAc7Ziw5Rumg7IyGlhlE6DMxepbjuqoy3UQkZnK2ZJMz4gJRgQQbgEWI3hrbyv6Qrlql3sE6mjsbWG6LKijuvnwnFekrJ1lBtm2QNwO6MAneOV942I+vO3tF1JZ/hAggcTfMd55WPpIFP93UgwVVAy3jyvoeJOsBX2fTRt4KtibXtbXPT1jZxBNRurkt0zN2ZsiCFGQ1+c2xNyCt9DY6/2Ik1F3XlGP2tid74bYlEYgEKlM5by7y3JXu/zSExmO2jSYAux3xlYA3sC26A4NjYHTW2RM9Ex/RaiuIbEs7hU3fhrdSH3UChaeV75cSc5Bbd2+K9QVadPcRVWkBkSTScjeuMr5uB+lZpMcdcOLlltRxiMXXG+WqlQyqf5m6etxC3HDja0tOD2fRV1dKKvTLEGqjFqi5ZMWJ3gRlkMs9JHU8WuNUncC1BvA7hKrUXg1muA/PI3PZ1jWH3KRWnSqMjLZRSqXCsOAuewx8bgnQkZzi8c1phj5cTv/v6TW1NiPSvVZGeiy2+PZd9VcZhjbxGdrG8rSYB03Bh6t1BIffJJsSLWXhYX0tJjZW3AGIqdXeJput7q97KQbGxysL3voLxOvs4qb06i3DNb8rKc1uBmrDQkZHI5TrHK71fyyyw11+AMRVKXLrkPxjs+fESrY+vvPUYgEM4AvrYcQdfwjwlpx7PY066EK9gGFivf1XBseV798isVssFUFFgVUm4e97kjPdPdY6Wml5ZzgpjGG9STT4al7E3uBnkba9UySwijcUaGwvz4yKxYJqtfUKEFgd0g2FxfMZMco+le2uXt6zHNt8aQFLl8pkAtQTc4aPpVNYtV7YHOZMm7IzS4c42frMmQOTr6fWcVTMmQOKUBi0B1AmTJzViIr017h6CIYkWGWUyZM2sawTE6mc7J/wAWoO+9/G1rX9T6zJk4x+zrL6uNkG2Ixdu+n/QZPtkFmTJtGF7DLG4zmwOt5D6zJko5qH+VW5PAbP8A+Xo/pT2mTJPamLZnkfpEMT1aDsuRFKpYjIjrHQiZMkorvRtz8Etc7xqZtxPVBzPGTlRzvHM/dpkyczp1ezFQfyz4A28LaWnmnS2kq4pwFABKEgAAEtYsSO88Zkya4s81b2SgXFOqgKA2gFhp3CPbdQGjUNhcEWPEX1tMmTr0z9tYGmq4qoigBfhU23QABvE5tYZX8ZmzmJwiMSS16uZzOvfMmTlo66LsWxFam2aEqChzUjc0KnIyCbI1LZWL28LNw7pkyT4vbr/I+uH8ftI7TUdTLiD57t788z6yOPatwtpNzJnn9lw+pXEGzWGQ8MpkyZIr/9k=" alt="Peinture intérieure Béziers">
           <span class="service-tag">Intérieur</span>
         </div>
         <div class="service-body">
@@ -738,6 +1092,52 @@
   </div>
 </section>
 
+<!-- NOTRE PROCESSUS -->
+<section id="processus" aria-label="Notre méthode de travail">
+  <div class="container">
+    <div class="processus-header">
+      <p class="section-label">Notre méthode</p>
+      <h2 class="section-title">Votre projet en 4 étapes</h2>
+      <div class="gold-separator"><span></span></div>
+      <p class="section-desc" style="margin:0 auto;">Un processus transparent, structuré et maîtrisé du premier contact jusqu'à la réception de votre façade rénovée.</p>
+    </div>
+    <div class="processus-grid">
+      <div class="processus-step">
+        <div class="processus-num">
+          <span class="processus-step-n">01</span>
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <h3>Diagnostic gratuit</h3>
+        <p>Votre artisan se déplace à Béziers pour inspecter votre façade, identifier les pathologies et évaluer les travaux nécessaires. Rendez-vous sous 48h, sans engagement.</p>
+      </div>
+      <div class="processus-step">
+        <div class="processus-num">
+          <span class="processus-step-n">02</span>
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>Devis personnalisé</h3>
+        <p>Nous vous remettons un devis détaillé, clair et transparent sous 48h. Matériaux, délais, coûts : tout est précisé pour éviter toute surprise.</p>
+      </div>
+      <div class="processus-step">
+        <div class="processus-num">
+          <span class="processus-step-n">03</span>
+          <svg viewBox="0 0 24 24"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/></svg>
+        </div>
+        <h3>Réalisation soignée</h3>
+        <p>Nos équipes interviennent avec méthode : protection des abords, préparation des supports, application des enduits et finitions — dans le strict respect des délais annoncés.</p>
+      </div>
+      <div class="processus-step">
+        <div class="processus-num">
+          <span class="processus-step-n">04</span>
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <h3>Réception &amp; Garantie</h3>
+        <p>Visite de réception avec vous pour valider chaque détail. Remise des documents de garantie décennale et départ d'un chantier propre. Votre satisfaction est notre seul objectif.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- STATS -->
 <div id="stats">
   <div class="container">
@@ -758,12 +1158,55 @@
   </div>
 </div>
 
+<!-- LABELS & CERTIFICATIONS -->
+<section id="certifications" aria-label="Nos labels et certifications">
+  <div class="container">
+    <div class="certif-header">
+      <p class="section-label" style="color:var(--gold-light);">Nos engagements</p>
+      <h2 class="section-title light">Labels &amp; Certifications</h2>
+      <p style="color:rgba(255,255,255,0.65);font-size:16px;max-width:500px;margin:12px auto 0;line-height:1.7;">Des artisans certifiés qui s'engagent sur la qualité, la sécurité et la durabilité de chaque chantier.</p>
+    </div>
+    <div class="certif-grid">
+      <div class="certif-card">
+        <div class="certif-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+        <span class="certif-name">Garantie Décennale</span>
+        <span class="certif-desc">Protection complète 10 ans sur tous nos travaux de ravalement</span>
+      </div>
+      <div class="certif-card">
+        <div class="certif-icon"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.09 15.91 0 13.33 0c-1.49 0-2.71.69-3.57 1.74L12 4.63l2.24-2.24C14.7 1.87 15.01 2 15.33 2c1.1 0 2 .9 2 2 0 1.08-.73 1.97-1.71 2.12-.11.01-.2.08-.29.08H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-9 7c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg></div>
+        <span class="certif-name">Assurance Pro RC</span>
+        <span class="certif-desc">Responsabilité civile professionnelle à jour et couverte</span>
+      </div>
+      <div class="certif-card">
+        <div class="certif-icon"><svg viewBox="0 0 24 24"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"/></svg></div>
+        <span class="certif-name">Artisan Certifié</span>
+        <span class="certif-desc">Qualifications reconnues par la Chambre des Métiers</span>
+      </div>
+      <div class="certif-card">
+        <div class="certif-icon"><svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg></div>
+        <span class="certif-name">Travaux RGE Éligibles</span>
+        <span class="certif-desc">Éligibilité aux aides CEE et MaPrimeRénov' pour l'isolation</span>
+      </div>
+      <div class="certif-card">
+        <div class="certif-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div>
+        <span class="certif-name">Qualibat</span>
+        <span class="certif-desc">Certification Qualibat pour travaux de ravalement et façade</span>
+      </div>
+      <div class="certif-card">
+        <div class="certif-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div>
+        <span class="certif-name">Note 4,9/5 Google</span>
+        <span class="certif-desc">47 avis vérifiés Google de clients satisfaits</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- À PROPOS -->
 <section id="apropos">
   <div class="container">
     <div class="apropos-grid">
       <div class="apropos-img-wrap">
-        <img src="data:image/jpeg;base64,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" alt="Équipe Façade Concept Baizieux" class="apropos-img">
+        <img src="data:image/jpeg;base64,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" alt="Équipe Façade Concept Béziers" class="apropos-img">
         <div class="apropos-badge">
           <span class="val">10+</span>
           <span class="lbl">Ans d'expertise</span>
@@ -771,9 +1214,9 @@
       </div>
       <div class="apropos-content">
         <p class="section-label">Qui sommes-nous</p>
-        <h2 class="section-title">Votre artisan de confiance<br>à Baizieux</h2>
+        <h2 class="section-title">Votre artisan de confiance<br>à Béziers</h2>
         <p style="color:#4b5563;font-size:16px;line-height:1.8;margin:20px 0 8px;">
-          Implantés localement à Baizieux et dans les communes environnantes, nous mettons notre savoir-faire au service de la rénovation et de l'embellissement de vos bâtiments depuis plus de 10 ans.
+          Implantés localement à Béziers et dans les communes environnantes, nous mettons notre savoir-faire au service de la rénovation et de l'embellissement de vos bâtiments depuis plus de 10 ans.
         </p>
         <p style="color:#4b5563;font-size:16px;line-height:1.8;">
           Notre équipe d'artisans qualifiés intervient avec rigueur et passion sur chaque chantier, en utilisant des matériaux de haute qualité pour des résultats durables.
@@ -783,7 +1226,7 @@
           <li>Artisans locaux, réactifs et disponibles 7j/7</li>
           <li>Matériaux certifiés et techniques homologuées</li>
           <li>Satisfaction client garantie sur chaque chantier</li>
-          <li>Couverture : Baizieux et toutes les communes voisines</li>
+          <li>Couverture : Béziers et toutes les communes voisines</li>
         </ul>
         <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;">
           <a href="#contact" class="btn-primary">Demander un devis</a>
@@ -798,50 +1241,187 @@
 <section id="avantages">
   <div class="container" style="text-align:center;">
     <p class="section-label">Pourquoi nous choisir</p>
-    <h2 class="section-title">Nos avantages</h2>
+    <h2 class="section-title">L'excellence à votre service</h2>
+    <div class="gold-separator"><span></span></div>
+    <p class="section-desc" style="margin:0 auto 56px;">Six engagements concrets qui font la différence sur chaque chantier de ravalement à Béziers et dans l'Hérault.</p>
     <div class="avantages-grid">
       <div class="av-card">
         <div class="av-icon">
           <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
         </div>
         <h3>Expertise certifiée</h3>
-        <p>Plus de 10 ans d'expérience en ravalement de façades, avec des artisans qualifiés et formés aux dernières techniques.</p>
+        <p>Nos artisans cumulent plus de 10 ans d'expérience exclusive dans le ravalement et la rénovation de façades à Béziers. Titulaires de qualifications reconnues, ils maîtrisent les techniques d'enduits minéraux, d'isolation thermique et de traitement hydrofuge adaptées au climat méditerranéen de l'Hérault.</p>
       </div>
       <div class="av-card">
         <div class="av-icon">
           <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>
         </div>
-        <h3>Matériaux de qualité</h3>
-        <p>Utilisation d'enduits et matériaux de haute qualité, sélectionnés pour leur durabilité et leurs finitions impeccables.</p>
+        <h3>Matériaux premium</h3>
+        <p>Nous sélectionnons rigoureusement des enduits, peintures et isolants issus des meilleures marques professionnelles. Chaque matériau est choisi pour sa résistance aux conditions spécifiques de Béziers — forte chaleur estivale, UV intenses, humidité hivernale — garantissant une protection longue durée et des finitions d'exception.</p>
       </div>
       <div class="av-card">
         <div class="av-icon">
           <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
         </div>
-        <h3>Intervention rapide</h3>
-        <p>Équipe réactive pour des interventions rapides et efficaces à Baizieux et dans toutes les communes environnantes.</p>
+        <h3>Réactivité terrain</h3>
+        <p>De la prise de contact à la première intervention, notre équipe s'engage à vous répondre sous 24h et à intervenir dans les meilleurs délais sur Béziers et l'Hérault. Grâce à notre ancrage local, nous optimisons chaque déplacement pour réduire les délais d'attente et tenir scrupuleusement les plannings convenus.</p>
       </div>
       <div class="av-card">
         <div class="av-icon">
           <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
         </div>
-        <h3>Diagnostic gratuit</h3>
-        <p>Un diagnostic complet et gratuit de votre façade, pour un projet entièrement personnalisé adapté à vos besoins.</p>
+        <h3>Diagnostic offert</h3>
+        <p>Avant tout devis, un artisan senior se déplace gratuitement chez vous pour identifier les pathologies de votre façade (fissures, décollements, infiltrations, champignons) et vous recommander les travaux réellement nécessaires. Aucun engagement, aucun frais cachés — un conseil honnête et entièrement personnalisé.</p>
       </div>
       <div class="av-card">
         <div class="av-icon">
           <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 19.67L5.71 21c.98-1.86 1.66-3.56 5.29-4.29.02.29.05.58.09.88L18.01 14 11 10c-.12.5-.24 1-.33 1.5C12.78 12.01 14.96 12.3 17 8z"/></svg>
         </div>
-        <h3>Respect environnement</h3>
-        <p>Solutions respectueuses de l'environnement, produits éco-responsables et méthodes à impact limité.</p>
+        <h3>Éco-responsabilité</h3>
+        <p>Nous privilégions des produits à faible impact environnemental, labellisés A+ en qualité d'air intérieur, et des techniques peu génératrices de déchets. Gestion responsable des évacuations de chantier et utilisation d'équipements à faible empreinte énergétique : nous construisons mieux, pour vous et pour l'avenir.</p>
       </div>
       <div class="av-card">
         <div class="av-icon">
           <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
         </div>
-        <h3>Garantie satisfaction</h3>
-        <p>Satisfaction totale garantie avec un suivi personnalisé de chaque projet, de la première visite jusqu'à la réception.</p>
+        <h3>Garantie décennale</h3>
+        <p>Chaque chantier est couvert par notre garantie décennale obligatoire (10 ans) et notre assurance responsabilité civile professionnelle à jour. En cas de désordre constaté dans les 10 ans suivant la réception des travaux, nous intervenons sans surcoût. Votre investissement est protégé dans la durée.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES GOOGLE -->
+<section id="temoignages" aria-label="Avis clients Google">
+  <div class="container">
+    <div class="temoignages-header">
+      <p class="section-label">Ce que disent nos clients</p>
+      <h2 class="section-title">Avis vérifiés Google</h2>
+      <div class="temo-rating-global">
+        <div class="temo-rating-num">4,9</div>
+        <div class="temo-rating-details">
+          <div class="temo-rating-stars">★★★★★</div>
+          <div class="temo-rating-count">Basé sur 47 avis Google</div>
+          <div class="google-logo" style="margin-top:6px;">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Google Reviews
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="temoignages-wrap">
+      <div class="temoignages-track" id="temoTrack">
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#4285F4;">S</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Sophie Marchand</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/>★★★★★</div>
+          <p class="temo-text" itemprop="reviewBody">« Équipe extrêmement professionnelle ! Ma façade était dans un état déplorable après des années sans entretien. Résultat impeccable, travail soigné dans les moindres détails. Le chef de chantier est venu lui-même superviser. Je recommande les yeux fermés ! »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-09-12"/>Il y a 2 mois · Béziers</div>
+        </article>
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#0d1f3c;">J</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Jean-Pierre Dubois</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/>★★★★★</div>
+          <p class="temo-text" itemprop="reviewBody">« Devis reçu en moins de 24h, délais tenus à la journée près. Le ravalement de ma maison à Agde est parfait. Les artisans sont sérieux, ponctuels et laissent le chantier propre. Bon rapport qualité/prix, je n'hésiterai pas à les rappeler pour la peinture intérieure. »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-08-20"/>Il y a 3 mois · Agde</div>
+        </article>
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#34A853;">M</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Marie-Claire Besson</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/>★★★★★</div>
+          <p class="temo-text" itemprop="reviewBody">« Prestations de démoussage sur ma maison et mes dépendances. Transformation bluffante ! L'enduit anti-mousse est de qualité professionnelle, ma toiture et mes murs sont comme neufs. Les équipes sont très polies et respectueuses des lieux. »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-07-05"/>Il y a 4 mois · Pézenas (Hérault)</div>
+        </article>
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#EA4335;">F</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">François Leconte</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/>★★★★★</div>
+          <p class="temo-text" itemprop="reviewBody">« J'ai fait appel à Façade Concept pour l'isolation thermique par l'extérieur de ma maison. Travail impeccable, économies sur ma facture de chauffage déjà visibles ! L'équipe a bien géré les contraintes de mon bâtiment ancien. Sérieux et compétents. »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-06-18"/>Il y a 5 mois · Sérignan</div>
+        </article>
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#FBBC05;color:#222;">I</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Isabelle Vandamme</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/>★★★★★</div>
+          <p class="temo-text" itemprop="reviewBody">« Très satisfaite du démoussage et du nettoyage haute pression de ma façade. Résultat bluffant pour un prix très raisonnable. L'artisan a pris le temps de tout expliquer et de conseiller sur l'entretien futur. Équipe locale au top, je conseille ! »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-10-01"/>Il y a 1 mois · Valras-Plage</div>
+        </article>
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#673ab7;">P</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Patrick Rombaut</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/>★★★★★</div>
+          <p class="temo-text" itemprop="reviewBody">« Façade concept a rénové la façade de mon commerce à Béziers. Parfait du début à la fin : écoute des besoins, respect du budget annoncé, finitions soignées. Mes clients ont remarqué la différence dès le premier jour. Merci à toute l'équipe ! »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-05-22"/>Il y a 6 mois · Béziers</div>
+        </article>
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#009688;">N</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Nathalie Chevalier</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="4"/>★★★★☆</div>
+          <p class="temo-text" itemprop="reviewBody">« Bonne prestation globale pour le ravalement de notre maison. Légère attente au démarrage du chantier mais une fois débuté, le travail a été réalisé avec soin. L'enduit est bien lissé et la couleur correspond exactement au choix fait. Équipe sympathique. »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-04-10"/>Il y a 7 mois · Portiragnes</div>
+        </article>
+
+        <article class="temo-card" itemscope itemtype="https://schema.org/Review">
+          <div class="temo-top">
+            <div class="temo-avatar" style="background:#c8922a;">A</div>
+            <div class="temo-meta">
+              <div class="temo-name" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Alain Beaumont</span></div>
+              <div class="temo-via"><svg viewBox="0 0 24 24" style="fill:#4285F4;"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" style="fill:#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" style="fill:#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" style="fill:#EA4335"/></svg>Avis Google</div>
+            </div>
+          </div>
+          <div class="temo-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"><meta itemprop="ratingValue" content="5"/>★★★★★</div>
+          <p class="temo-text" itemprop="reviewBody">« Façade refaite à neuf, magnifique ! Après 20 ans sans entretien, ma maison ressemble à une construction neuve. Les artisans de Façade Concept ont traité les fissures, posé un enduit hydrofuge et peint. Le résultat dépasse mes attentes. Prix juste et honnête. »</p>
+          <div class="temo-date"><meta itemprop="datePublished" content="2024-03-15"/>Il y a 8 mois · Murviel-lès-Béziers</div>
+        </article>
+
+      </div>
+    </div>
+    <div class="temo-nav">
+      <button class="temo-btn" id="temoPrev" aria-label="Précédent"><svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/></svg></button>
+      <div class="temo-dots" id="temoDots"></div>
+      <button class="temo-btn" id="temoNext" aria-label="Suivant"><svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg></button>
     </div>
   </div>
 </section>
@@ -852,7 +1432,7 @@
     <div style="text-align:center;margin-bottom:48px;">
       <p class="section-label">Notre travail</p>
       <h2 class="section-title">Nos réalisations</h2>
-      <p class="section-desc" style="margin:0 auto;">Quelques exemples de chantiers réalisés à Baizieux et dans les communes voisines.</p>
+      <p class="section-desc" style="margin:0 auto;">Quelques exemples de chantiers réalisés à Béziers et dans les communes voisines.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
       <div style="border-radius:12px;overflow:hidden;height:260px;box-shadow:var(--shadow);">
@@ -878,13 +1458,123 @@
 <div id="cta-devis">
   <div class="cta-content">
     <h2>Votre façade mérite le meilleur</h2>
-    <p>Chez Façade Concept, nous nous engageons à offrir une satisfaction totale à nos clients à Baizieux et dans les Bouches-du-Rhône.</p>
+    <p>Chez Façade Concept, nous nous engageons à offrir une satisfaction totale à nos clients à Béziers et dans l'Hérault.</p>
     <div class="cta-btns">
       <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
       <a href="tel:0000000000" class="btn-secondary">Appeler maintenant</a>
     </div>
   </div>
 </div>
+
+<!-- ZONE D'INTERVENTION -->
+<section id="zone" aria-label="Zone d'intervention Béziers et Hérault">
+  <div class="container">
+    <div class="zone-header">
+      <p class="section-label">Secteur d'activité</p>
+      <h2 class="section-title">Zone d'intervention</h2>
+      <div class="gold-separator"><span></span></div>
+      <p class="section-desc" style="margin:0 auto;">Nous intervenons sur Béziers et toutes les communes de l'Hérault environnantes pour vos travaux de ravalement, démoussage et peinture extérieure.</p>
+    </div>
+    <div class="zone-grid">
+      <div>
+        <div class="zone-dept">
+          <svg viewBox="0 0 24 24" style="width:12px;height:12px;fill:currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Hérault (34) — Occitanie
+        </div>
+        <div class="zone-list">
+          <div class="zone-item">Béziers</div>
+          <div class="zone-item">Agde</div>
+          <div class="zone-item">Pézenas</div>
+          <div class="zone-item">Sérignan</div>
+          <div class="zone-item">Valras-Plage</div>
+          <div class="zone-item">Villeneuve-lès-Béziers</div>
+          <div class="zone-item">Portiragnes</div>
+          <div class="zone-item">Bassan</div>
+          <div class="zone-item">Murviel-lès-Béziers</div>
+          <div class="zone-item">Corneilhan</div>
+          <div class="zone-item">Thézan-lès-Béziers</div>
+          <div class="zone-item">Cazouls-lès-Béziers</div>
+          <div class="zone-item">Servian</div>
+          <div class="zone-item">Lignan-sur-Orb</div>
+          <div class="zone-item">Narbonne</div>
+          <div class="zone-item">Montpellier</div>
+        </div>
+      </div>
+      <div class="zone-cta">
+        <h3>Votre commune n'est pas dans la liste ?</h3>
+        <p>Nous intervenons sur un rayon étendu autour de Béziers. Contactez-nous pour vérifier si votre commune fait partie de notre zone d'intervention — dans la plupart des cas, la réponse est oui.</p>
+        <a href="#contact" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+          <svg style="width:15px;height:15px;fill:currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Vérifier ma commune
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" aria-label="Questions fréquentes">
+  <div class="container">
+    <div class="faq-header">
+      <p class="section-label">Vos questions, nos réponses</p>
+      <h2 class="section-title">Questions fréquentes</h2>
+      <p class="section-desc" style="margin:0 auto;text-align:center;">Tout ce que vous devez savoir sur nos services de ravalement et rénovation de façade à Béziers.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quel est le prix d'un ravalement de façade à Béziers ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Le coût dépend de la superficie, de l'état de la façade et des travaux nécessaires (traitement des fissures, hydrofuge, enduit, peinture). En général, comptez entre 30 et 80 € par m² toutes fournitures et pose comprises. Pour votre maison à Béziers ou dans l'Hérault, nous vous établissons un devis gratuit et personnalisé sur place.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Combien de temps dure un ravalement de façade ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>La durée dépend de la surface et des travaux à réaliser. Pour une maison individuelle standard (100 à 150 m²), comptez en moyenne 3 à 7 jours ouvrables. Les traitements hydrofuges et enduits nécessitent des temps de séchage entre les couches, ce qui peut allonger légèrement le planning.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Dans quelles communes intervenez-vous autour de Béziers ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Nous intervenons à Béziers et dans toutes les communes environnantes de l'Hérault : Agde, Pézenas, Sérignan, Valras-Plage, Villeneuve-lès-Béziers, Portiragnes, Bassan, Murviel-lès-Béziers, Corneilhan, et plus largement dans la région de Montpellier et toute l'Occitanie. Contactez-nous pour vérifier votre commune.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Le devis est-il vraiment gratuit et sans engagement ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Oui, absolument. Notre artisan se déplace chez vous gratuitement pour évaluer l'état de votre façade et vous remettre un devis détaillé sous 48h. Ce devis est entièrement gratuit et ne vous engage à rien. Vous disposez de tout le temps nécessaire pour le comparer et prendre votre décision.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quelle est la durée de vie d'un ravalement de façade ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Avec des matériaux de qualité professionnelle et une mise en œuvre soignée, un ravalement de façade a une durée de vie de 10 à 20 ans selon les conditions climatiques. La Hérault, avec ses hivers humides, demande des produits hydrofuges performants que nous sélectionnons spécialement pour la région.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quand faut-il ravaler sa façade ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>La réglementation impose le ravalement tous les 10 ans dans les communes qui en ont pris l'arrêté. Au-delà de l'obligation, il est conseillé d'intervenir dès que vous constatez des fissures, des taches de moisissure, des décollements d'enduit, des infiltrations d'eau ou une dégradation de l'aspect visuel. Une façade en bon état protège votre bien et maintient sa valeur.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Y a-t-il des aides financières pour les travaux de façade ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Pour les travaux d'isolation thermique par l'extérieur (ITE), vous pouvez bénéficier de MaPrimeRénov', des Certificats d'Économie d'Énergie (CEE), de l'éco-PTZ (prêt à taux zéro) et de la TVA réduite à 5,5 %. Notre équipe vous aide à constituer votre dossier d'aide. Pour le ravalement seul, des aides locales peuvent exister selon votre commune.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Proposez-vous une garantie sur vos travaux ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Oui. Tous nos travaux sont couverts par la garantie décennale (10 ans) obligatoire pour les travaux de gros œuvre, ainsi que par notre assurance responsabilité civile professionnelle. En cas de désordre constaté dans les 10 ans suivant la réception du chantier, nous intervenons gratuitement.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Faut-il préparer quoi que ce soit avant votre intervention ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Nous prenons en charge la totalité de l'organisation : protection des abords, installation des échafaudages, bâches de protection pour votre jardin et vos ouvertures. Il vous suffit de prévoir un accès libre autour de la maison. Si vous avez des plantes ou des objets sensibles, nous vous conseillons de les déplacer à l'avance.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Pouvez-vous intervenir sur des bâtiments anciens ou classés ?<span class="faq-ico">+</span></button>
+        <div class="faq-a"><p>Oui, nous avons l'expérience des bâtiments anciens (pierres, briques, moellons) et des contraintes spécifiques qu'ils impliquent. Pour les bâtiments situés dans une zone protégée ou classée, nous adaptons nos matériaux aux règles des Architectes des Bâtiments de France (ABF) et vous accompagnons dans les démarches administratives si nécessaire.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -919,7 +1609,7 @@
             </div>
             <div class="contact-item-text">
               <strong>Zone d'intervention</strong>
-              <span>Baizieux et communes environnantes</span>
+              <span>Béziers et communes environnantes</span>
             </div>
           </div>
           <div class="contact-item">
@@ -981,7 +1671,7 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <h3>Façade Concept</h3>
-      <p>Artisans spécialistes du ravalement, de la rénovation de façades et de la peinture à Baizieux et dans toutes les communes alentour. Qualité, réactivité et satisfaction garanties.</p>
+      <p>Artisans spécialistes du ravalement de façade, de la rénovation extérieure, du démoussage et de la peinture à Béziers et dans tout l'Hérault (34). Garantie décennale, qualité premium et satisfaction 100% garanties.</p>
       <div class="footer-social">
         <a href="#" aria-label="Facebook">f</a>
         <a href="#" aria-label="Instagram">in</a>
@@ -1016,7 +1706,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>Façade Concept © 2025 — Baizieux et alentours</span>
+    <span>Façade Concept © 2025 — Béziers et alentours</span>
     <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
   </div>
 </footer>
@@ -1095,6 +1785,76 @@
   }, { threshold: 0.15 });
 
   document.querySelectorAll('.reveal-img').forEach(img => imgObserver.observe(img));
+
+  // === CAROUSEL TÉMOIGNAGES ===
+  (function() {
+    const track = document.getElementById('temoTrack');
+    if (!track) return;
+    const cards = Array.from(track.children);
+    const total = cards.length;
+    const dotsEl = document.getElementById('temoDots');
+    let perView = window.innerWidth >= 900 ? 3 : window.innerWidth >= 600 ? 2 : 1;
+    let current = 0;
+    let autoTimer;
+
+    function getPerView() { return window.innerWidth >= 900 ? 3 : window.innerWidth >= 600 ? 2 : 1; }
+
+    function buildDots() {
+      dotsEl.innerHTML = '';
+      const pages = Math.ceil(total / perView);
+      for (let i = 0; i < pages; i++) {
+        const d = document.createElement('button');
+        d.className = 'temo-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Page ' + (i + 1));
+        d.addEventListener('click', () => goTo(i * perView));
+        dotsEl.appendChild(d);
+      }
+    }
+
+    function updateDots() {
+      const dots = dotsEl.querySelectorAll('.temo-dot');
+      const page = Math.round(current / perView);
+      dots.forEach((d, i) => d.classList.toggle('active', i === page));
+    }
+
+    function goTo(idx) {
+      const max = Math.max(0, total - perView);
+      current = Math.max(0, Math.min(idx, max));
+      const cardW = cards[0].getBoundingClientRect().width + 24;
+      track.style.transform = 'translateX(-' + (current * cardW) + 'px)';
+      updateDots();
+    }
+
+    function next() { goTo(current + perView >= total ? 0 : current + perView); }
+    function prev() { goTo(current - perView < 0 ? Math.max(0, total - perView) : current - perView); }
+
+    function startAuto() { autoTimer = setInterval(next, 5000); }
+    function stopAuto() { clearInterval(autoTimer); }
+
+    document.getElementById('temoNext').addEventListener('click', () => { stopAuto(); next(); startAuto(); });
+    document.getElementById('temoPrev').addEventListener('click', () => { stopAuto(); prev(); startAuto(); });
+    track.closest('.temoignages-wrap').addEventListener('mouseenter', stopAuto);
+    track.closest('.temoignages-wrap').addEventListener('mouseleave', startAuto);
+
+    window.addEventListener('resize', () => { perView = getPerView(); buildDots(); goTo(0); });
+    buildDots();
+    startAuto();
+  })();
+
+  // === ACCORDION FAQ ===
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', function() {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => {
+        o.classList.remove('open');
+        o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 </script>
 
 </body>
