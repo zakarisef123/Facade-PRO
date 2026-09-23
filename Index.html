@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -315,6 +316,19 @@ button{font:inherit;cursor:pointer}
 .cf.sent form{display:none}.cf.sent .cf-ok{display:block}
 @media (max-width:980px){.cf-grid{grid-template-columns:1fr;gap:40px}}
 @media (max-width:640px){.contact-form-sec{padding:0 0 80px}.cf{padding:26px 18px}.cf-row{grid-template-columns:1fr;gap:0}}
+
+/* ---------- services : détails techniques ---------- */
+.service-tech{list-style:none;margin:0 0 20px;padding:0;border-top:1px solid var(--sand-line)}
+.service-tech li{padding:9px 0;border-bottom:1px solid var(--sand-line);font-size:13.5px;line-height:1.5;color:var(--text)}
+.service-tech b{display:block;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--terra);margin-bottom:2px}
+.service-more summary{cursor:pointer;list-style:none;display:inline-flex}
+.service-more summary::-webkit-details-marker{display:none}
+.service-more[open] summary svg{transform:rotate(90deg)}
+.service-more ol{margin:18px 0 16px;padding:0;list-style:none;counter-reset:st}
+.service-more ol li{counter-increment:st;position:relative;padding:0 0 12px 34px;font-size:13.5px;line-height:1.55}
+.service-more ol li::before{content:counter(st);position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--sand);color:var(--ink);font-size:11.5px;font-weight:600;display:grid;place-items:center}
+.service-meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px!important}
+.service-meta span{font-size:12px;color:var(--ink);background:var(--sand);padding:5px 10px}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 </head>
@@ -454,7 +468,25 @@ button{font:inherit;cursor:pointer}
         <div class="service-title"><span class="service-num">01</span><h3>Ravalement de façade</h3></div>
         <div class="service-body">
           <p>Enduit, crépi, peinture de façade : on redonne à vos murs leur allure d'origine, sans mauvaise surprise.</p>
-          <a href="#contact" class="link-arrow">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <ul class="service-tech">
+            <li><b>Diagnostic</b>fissures, décollements, humidité, test d'adhérence du support</li>
+            <li><b>Préparation</b>nettoyage haute pression ou hydrogommage, traitement fongicide</li>
+            <li><b>Fissures</b>ouverture, pontage par entoilage, mortier de réparation</li>
+            <li><b>Enduits</b>monocouche projeté (gratté, taloché, écrasé) ou enduit à la chaux pour le bâti ancien</li>
+            <li><b>Finitions</b>peinture siloxane, pliolite ou minérale ; revêtements D2/D3 et d'imperméabilité I1 à I4</li>
+          </ul>
+          <details class="service-more">
+            <summary class="link-arrow">Découvrir la méthode <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary>
+            <ol>
+              <li>Visite et diagnostic gratuits, relevé des surfaces et choix de la teinte sur nuancier (dossier de déclaration préalable en mairie si besoin).</li>
+              <li>Installation de l'échafaudage et protection des menuiseries, sols et végétaux.</li>
+              <li>Nettoyage du support, purge des parties non adhérentes et traitement des fissures.</li>
+              <li>Application de l'enduit ou du système de peinture en deux passes, selon les DTU 26.1 et 59.1.</li>
+              <li>Contrôle final avec vous, repli du chantier et nettoyage des abords.</li>
+            </ol>
+            <p class="service-meta"><span>Délai indicatif : 1 à 3 semaines pour une maison individuelle</span><span>Garantie décennale</span></p>
+            <a href="#contact" class="link-arrow">Demander un devis pour ce service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </details>
         </div>
       </article>
       <article class="service reveal">
@@ -462,7 +494,25 @@ button{font:inherit;cursor:pointer}
         <div class="service-title"><span class="service-num">02</span><h3>Démoussage &amp; Nettoyage</h3></div>
         <div class="service-body">
           <p>Mousse, lichen, dépôts noirs : on nettoie façades, murets et toitures, puis on protège durablement.</p>
-          <a href="#contact" class="link-arrow">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <ul class="service-tech">
+            <li><b>Démoussage</b>brossage et grattage mécanique des mousses et lichens</li>
+            <li><b>Traitement</b>biocide anti-mousse curatif, laissé agir avant rinçage</li>
+            <li><b>Nettoyage</b>pression et température adaptées au support, sans abîmer tuiles ni enduits</li>
+            <li><b>Protection</b>hydrofuge incolore pour façades et murets, hydrofuge coloré possible pour les toitures</li>
+            <li><b>Abords</b>gouttières vidées, évacuation des déchets, surfaces rincées</li>
+          </ul>
+          <details class="service-more">
+            <summary class="link-arrow">Découvrir la méthode <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary>
+            <ol>
+              <li>Inspection du support : état des tuiles, porosité de l'enduit, zones fragiles.</li>
+              <li>Protection des abords, des plantations et des ouvertures.</li>
+              <li>Démoussage mécanique puis application du traitement curatif.</li>
+              <li>Nettoyage et rinçage avec une pression adaptée au matériau.</li>
+              <li>Application de l'hydrofuge sur support sec : l'eau perle, le mur continue de respirer.</li>
+            </ol>
+            <p class="service-meta"><span>Délai indicatif : 1 à 3 jours selon la surface</span><span>Garantie décennale</span></p>
+            <a href="#contact" class="link-arrow">Demander un devis pour ce service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </details>
         </div>
       </article>
       <article class="service reveal">
@@ -470,7 +520,25 @@ button{font:inherit;cursor:pointer}
         <div class="service-title"><span class="service-num">03</span><h3>Peinture intérieure</h3></div>
         <div class="service-body">
           <p>Murs, plafonds, boiseries : une préparation soignée et des finitions propres, pièce après pièce.</p>
-          <a href="#contact" class="link-arrow">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <ul class="service-tech">
+            <li><b>Protection</b>bâchage des sols, masquage des menuiseries, prises et luminaires</li>
+            <li><b>Préparation</b>lessivage, rebouchage, ponçage, bandes calicot sur les fissures</li>
+            <li><b>Lissage</b>enduit de lissage pour une surface parfaitement plane avant peinture</li>
+            <li><b>Impression</b>sous-couche adaptée au support : plâtre neuf, plaques de plâtre, anciennes peintures</li>
+            <li><b>Finitions</b>2 couches mat, velours ou satin ; peintures en phase aqueuse, faibles COV (étiquette A+)</li>
+          </ul>
+          <details class="service-more">
+            <summary class="link-arrow">Découvrir la méthode <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></summary>
+            <ol>
+              <li>Visite, choix des teintes et des finitions pièce par pièce.</li>
+              <li>Déplacement et protection du mobilier, bâchage et masquage.</li>
+              <li>Préparation complète des supports : c'est elle qui fait la qualité du résultat.</li>
+              <li>Impression puis deux couches de finition, en finition soignée selon le DTU 59.1.</li>
+              <li>Retouches, dépose des protections et remise en place : la pièce est prête à vivre.</li>
+            </ol>
+            <p class="service-meta"><span>Délai indicatif : 2 à 4 jours par pièce en moyenne</span><span>Garantie décennale</span></p>
+            <a href="#contact" class="link-arrow">Demander un devis pour ce service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </details>
         </div>
       </article>
     </div>
@@ -603,7 +671,7 @@ button{font:inherit;cursor:pointer}
       </ul>
     </div>
     <div class="cf reveal" id="cfBox">
-      <form id="contactForm" action="https://formsubmit.co/contact@facades-cabrol.fr" method="POST" enctype="multipart/form-data" novalidate>
+      <form id="contactForm" action="https://formsubmit.co/artisansfrance.contact@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
         <input type="hidden" name="_subject" value="Nouvelle demande depuis le site Façades Cabrol &amp; Fils">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_next" id="cfNext" value="">
@@ -665,7 +733,7 @@ button{font:inherit;cursor:pointer}
         <h4>Contact</h4>
         <ul class="footer-contact">
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>[Adresse à compléter], Béziers</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><a href="mailto:contact@facades-cabrol.fr">contact@facades-cabrol.fr</a></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><a href="mailto:artisansfrance.contact@gmail.com">artisansfrance.contact@gmail.com</a></li>
           <li class="hours">Du lundi au vendredi : 8h – 18h · Samedi sur rendez-vous</li>
         </ul>
       </div>
