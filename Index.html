@@ -687,7 +687,7 @@ button{font:inherit;cursor:pointer}
         <div class="cf-field">
           <span class="cf-label">Photos &amp; vidéos <small style="text-transform:none;letter-spacing:0;color:var(--muted);font-weight:400">(facultatif)</small></span>
           <div class="cf-drop" id="cfDrop">
-            <input type="file" id="cfFiles" name="attachment" accept="image/*,video/*" multiple aria-label="Ajouter des photos ou des vidéos">
+            <input type="file" id="cfFiles" accept="image/*,video/*" multiple aria-label="Ajouter des photos ou des vidéos">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m17 8-5-5-5 5"/><path d="M12 3v12"/></svg>
             <b>Ajouter des photos ou vidéos</b>
             <small>Cliquez ou glissez vos fichiers ici · JPG, PNG, HEIC, MP4, MOV · 10 Mo max au total</small>
@@ -798,7 +798,6 @@ button{font:inherit;cursor:pointer}
     if(location.hash==='#merci'){document.getElementById('cfBox').classList.add('sent');setTimeout(function(){document.getElementById('contact').scrollIntoView()},50)}
     function size(b){return b<1048576?Math.round(b/1024)+' Ko':(b/1048576).toFixed(1).replace('.',',')+' Mo'}
     function sync(){
-      try{var dt=new DataTransfer();files.forEach(function(f){dt.items.add(f)});input.files=dt.files}catch(e){}
       list.innerHTML='';
       files.forEach(function(f,i){
         var li=document.createElement('li'),th;
@@ -824,6 +823,15 @@ button{font:inherit;cursor:pointer}
       ['cf-nom','cf-prenom','cf-tel','cf-msg'].forEach(function(id){var el=document.getElementById(id),f=el.parentNode,ko=!el.value.trim()||(id==='cf-tel'&&el.value.replace(/\D/g,'').length<10);f.classList.toggle('err',ko);if(ko&&!bad)bad=el});
       if(bad){ev.preventDefault();err.textContent='Merci de remplir les champs obligatoires (téléphone : 10 chiffres).';bad.focus();return}
       if(files.reduce(function(a,f){return a+f.size},0)>MAX){ev.preventDefault();return}
+      // FormSubmit attend un champ fichier distinct par pièce jointe (attachment, attachment2, …) :
+      // un seul champ "multiple" n'est pas fiable côté FormSubmit, d'où les photos/vidéos manquantes.
+      form.querySelectorAll('input[data-cf-file]').forEach(function(n){n.remove()});
+      files.forEach(function(f,i){
+        var fi=document.createElement('input');
+        fi.type='file';fi.name=i===0?'attachment':'attachment'+(i+1);fi.style.display='none';fi.setAttribute('data-cf-file','1');
+        var dt=new DataTransfer();dt.items.add(f);fi.files=dt.files;
+        form.appendChild(fi);
+      });
       err.textContent='';var btn=document.getElementById('cfSubmit');btn.disabled=true;btn.firstChild.nodeValue='Envoi en cours… ';
     });
   })();
